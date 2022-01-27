@@ -1,2 +1,2 @@
-# Factorial-Calculator-Design
+# Factorial Calculator Design
 Factorial calculator design made with HTML, CSS and JavaScrip
