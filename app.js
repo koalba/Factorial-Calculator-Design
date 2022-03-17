@@ -1,9 +1,11 @@
 'use strict'
 
-function writeFactorial(){
-    let numValue = +document.querySelector('#number').value
-    let nodeResult = document.querySelector('.result')
+const d = document
 
+function writeFactorial(){
+    let numValue = +d.querySelector('#number').value
+    let nodeResult = d.querySelector('.result')
+    
     nodeResult.classList.add('active')
     nodeResult.firstChild.innerHTML = calcFactorial(numValue)
 }
@@ -17,3 +19,5 @@ function calcFactorial (number){
 
     return total
 }
+
+d.querySelector('.main__button').addEventListener('click', writeFactorial)
